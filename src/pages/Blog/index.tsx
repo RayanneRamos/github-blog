@@ -4,6 +4,7 @@ import { Profile } from './components/Profile'
 import { SearchInput } from './components/SearchInput'
 import { PostListContainer } from './styles'
 import { api } from '../../lib/api'
+import { Spinner } from '../../components/Spinner'
 
 const username = import.meta.env.VITE_GITHUB_USERNAME
 const reponame = import.meta.env.VITE_GITHUB_REPONAME
@@ -48,11 +49,15 @@ export function BlogPage() {
     <>
       <Profile />
       <SearchInput getPosts={getPosts} postsLength={posts.length} />
-      <PostListContainer>
-        {posts.map((post) => {
-          return <Post key={post.number} post={post} />
-        })}
-      </PostListContainer>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <PostListContainer>
+          {posts.map((post) => {
+            return <Post key={post.number} post={post} />
+          })}
+        </PostListContainer>
+      )}
     </>
   )
 }
