@@ -3,6 +3,7 @@ import { PostHeader } from './components/PostHeader'
 import { IPost } from '../Blog'
 import { api } from '../../lib/api'
 import { useParams } from 'react-router-dom'
+import { PostContent } from './components/PostContent'
 
 const username = import.meta.env.VITE_GITHUB_USERNAME
 const reponame = import.meta.env.VITE_GITHUB_REPONAME
@@ -31,6 +32,7 @@ export function Post() {
   return (
     <>
       <PostHeader postData={postData} isLoading={isLoading} />
+      {!isLoading && <PostContent content={postData.body} />}
     </>
   )
 }
