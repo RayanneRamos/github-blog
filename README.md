@@ -23,7 +23,7 @@
 3. **Barra de pesquisa, permitindo buscar por posts específicos**
 4. **Integrado com a API do GitHub para buscar dados de maneira eficiente**
 
-## 🧪 Technologies
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
