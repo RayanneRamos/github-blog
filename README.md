@@ -16,6 +16,13 @@
 
 [Github Blog](https://github-blog-og1e8ffnt-rayanneramos.vercel.app/) é o terceiro desafio desenvolvido durante o bootcamp ignite da [Rocketseat](https://www.rocketseat.com.br/) que foca nas tecnologias ReactJS, React Native e NodeJS. Consiste em criar um blog do github, onde por meio de uma api faz um fetch nos dados de profile, posts e uma barra de pesquisa para buscar pelos posts criados.
 
+## 🌟 Funcionalidades
+
+1. **Exibição de perfil GitHub com informações do usuário** 
+2. **Listagem de posts do GitHub de forma dinâmica** 
+3. **Barra de pesquisa, permitindo buscar por posts específicos**
+4. **Integrado com a API do GitHub para buscar dados de maneira eficiente**
+
 ## 🧪 Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
